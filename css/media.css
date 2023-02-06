@@ -1,0 +1,152 @@
+@media (max-width: 1920px) {
+  .container {
+    padding: 0 370px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    padding: 0 100px;
+  }
+
+  .header__logo-block {
+    display: block;
+  }
+
+  .header__logo-1024 img {
+    width: 112px;
+  }
+
+  .header__logo {
+    display: none;
+  }
+
+  .header::after {
+    top: 70%;
+  }
+
+  .header__block-bottom {
+    padding-right: 0;
+    background: none;
+  }
+
+  /* .header__nav-bottom {
+    width: 490px;
+  } */
+
+  .header__list-bottom {
+    margin-right: 37px;
+  }
+
+  .header__music-wrapper:first-child {
+    margin-right: 24px;
+  }
+
+  .header__music-wrapper:last-child {
+    padding-right: 18px;
+  }
+
+  .radio-container {
+    background-size: 256px 262px;
+  }
+
+  .radio__text {
+    max-width: 539px;
+    margin-bottom: 16px;
+  }
+
+  .podcasts__title {
+    margin-bottom: 27px;
+  }
+
+  .podcasts__item {
+    max-width: 396px;
+  }
+
+  .podcasts__content {
+    max-width: 284px;
+  }
+
+  .podcasts__descr {
+    padding-bottom: 23px;
+  }
+
+  .broadcast__content {
+    background-position: 0% 46%;
+  }
+
+  .broadcast__list {
+    padding-top: 12px;
+    max-width: 540px;
+  }
+
+  .guests__text {
+    margin-bottom: 51px;
+    max-width: 536px;
+  }
+
+  .accordion-container {
+    max-width: 539px;
+  }
+
+  .guests__info {
+    max-width: 255px;
+  }
+
+  .ac-text {
+    flex-wrap: wrap;
+  }
+
+  .guests__list:not(:last-child) {
+    margin-right: 38px;
+  }
+
+  .guests__list:last-child {
+    display: none;
+  }
+
+  .guests__list:not(:last-child) .guests__item:last-child {
+    display: block;
+  }
+
+  .guests__list:nth-child(3) {
+    margin-right: 0;
+  }
+
+  .playlists-container {
+    flex-direction: column;
+  }
+
+  .playlists__info {
+    display: none;
+  }
+
+  .playlists__info-1024 {
+    display: block;
+  }
+
+  .playlists__form {
+    border: none;
+    margin-bottom: 32px;
+  }
+
+  .playlists__list {
+    margin-bottom: 38px;
+    padding-bottom: 42px;
+    width: 100%;
+    border-bottom: 1px solid #D2D5DD;
+  }
+
+  .playlists__item {
+    display: flex;
+  }
+
+  .playlists__picture {
+    width: 112px;
+  }
+
+  .playlists__description {
+    padding: 40px 10px;
+    width: 143px;
+  }
+}
