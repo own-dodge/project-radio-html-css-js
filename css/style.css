@@ -120,6 +120,10 @@ p {
   border-top: 1px solid #E6E8EC;
 }
 
+.header__burger {
+  display: none;
+}
+
 .header__block-top {
   display: flex;
   justify-content: space-between;
@@ -169,6 +173,7 @@ p {
 }
 
 .header__btns-block {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -179,6 +184,24 @@ p {
 .header__search {
   width: 24px;
   height: 24px;
+}
+
+.header__search-input {
+  display: none;
+}
+
+.header__search-input--active {
+  position: absolute;
+  display: block;
+  left: -328px;
+  border: none;
+  border-bottom: 1px solid #6D31EE;
+  width: 308px;
+  z-index: 1000;
+}
+
+.header__search-input--active:focus {
+  outline: none;
 }
 
 .header__search:focus {
@@ -203,6 +226,10 @@ p {
   line-height: 16px;
   color: #121723;
   transition: background-color .2s ease-in-out, border-color .2s ease-in-out;
+}
+
+.header__btn-320 {
+  display: none;
 }
 
 .header_btn:focus {
@@ -270,6 +297,14 @@ p {
   width: 347px;
 }
 
+.header__music-menu {
+  display: none;
+}
+
+.header__music-menu-320 {
+  display: none;
+}
+
 .header__music-wrapper {
   display: flex;
   padding-top: 3px;
@@ -325,10 +360,25 @@ p {
   color: #121723;
 }
 
-.header__enter {
-  position: fixed;
+.header__modal {
   display: none;
-  top: 20%;
+}
+
+.header__modal--open {
+  position: fixed;
+  display: grid;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.header__enter {
+  position: relative;
+  top: 5%;
   right: 0;
   left: 0;
   width: 824px;
@@ -824,8 +874,12 @@ p {
   outline: none;
 }
 
-.podcasts__likes:focus path {
-  fill: #FFFFFF;
+.podcasts__likes svg {
+  fill: #A1A6B4;
+}
+
+.podcasts__likes:focus svg {
+  stroke: #FFFFFF;
 }
 
 .podcasts__likes:focus {
@@ -836,7 +890,7 @@ p {
   color: #FFFFFF;
 }
 
-.podcasts__likes:hover path {
+.podcasts__likes:hover svg {
   stroke: #6D31EE;
 }
 
@@ -941,6 +995,10 @@ p {
   background-image: url(../img/mic.png);
   background-repeat: no-repeat;
   background-position: 0% 73%;
+}
+
+.broadcast__content-1024 {
+  display: none;
 }
 
 .broadcast__title {
@@ -1088,6 +1146,21 @@ p {
 }
 
 .broadcast__btn:active {
+  background: #4F28A5;
+  border-color: #4F28A5;
+  color: #FFFFFF;
+}
+
+.broadcast__btn-1024:focus {
+  background: #AA9DFA;
+}
+
+.broadcast__btn-1024:hover {
+  background: #121723;
+  color: #FFFFFF;
+}
+
+.broadcast__btn-1024:active {
   background: #4F28A5;
   border-color: #4F28A5;
   color: #FFFFFF;
@@ -1348,6 +1421,10 @@ p {
   display: none;
 }
 
+.guests__list-320 {
+  display: none;
+}
+
 .guests__item:not(:last-child) {
   margin-bottom: 8px;
 }
@@ -1487,6 +1564,10 @@ p {
   line-height: 20px;
   color: #121723;
   cursor: pointer;
+}
+
+.swiper__playlists {
+  display: none;
 }
 
 .playlists__radiobtn {
@@ -1863,14 +1944,14 @@ p {
 
 .swiper-button-next,
 .swiper-rtl .swiper-button-prev {
-  right: 330px;
-  top: 543px;
+  right: 15%;
+  top: 42%;
 }
 
 .swiper-button-prev,
 .swiper-rtl .swiper-button-next {
-  left: 330px;
-  top: 543px;
+  left: 15%;
+  top: 42%;
 }
 
 .about-us__picture img {
@@ -1970,6 +2051,7 @@ p {
   font-size: 20px;
   line-height: 20px;
   color: #FFFFFF;
+  transition: background-color .3s ease-in-out;
 }
 
 .about-us__btn:focus {
@@ -2097,6 +2179,10 @@ p {
   font-size: 16px;
   line-height: 103.34%;
   color: #A1A6B4;
+}
+
+.social-link path {
+  transition: fill .3s ease-in-out;
 }
 
 .social-link:focus path {
